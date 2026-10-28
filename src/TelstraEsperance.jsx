@@ -2,12 +2,14 @@ import React, { useState, useMemo, useEffect } from 'react';
 import Papa from 'papaparse';
 
 export default function IncentiveDashboard() {
-  const [consultants, setConsultants] = useState([
-    { id: 1, name: 'Alex', w9: 0, u2: 0, w8c: 0 },
-    { id: 2, name: 'Jordan', w9: 0, u2: 0, w8c: 0 },
-    { id: 3, name: 'Taylor', w9: 0, u2: 0, w8c: 0 },
-    { id: 4, name: 'Sam', w9: 0, u2: 0, w8c: 0 },
-    { id: 5, name: 'Casey', w9: 0, u2: 0, w8c: 0 },
+const [consultants, setConsultants] = useState([
+    { id: 1, name: 'Josh', w9: 0, u2: 0, w8c: 0 },
+    { id: 2, name: 'Ryan', w9: 0, u2: 0, w8c: 0 },
+    { id: 3, name: 'Ashley', w9: 0, u2: 0, w8c: 0 },
+    { id: 4, name: 'Zoe', w9: 0, u2: 0, w8c: 0 },
+    { id: 5, name: 'Soraya', w9: 0, u2: 0, w8c: 0 },
+    { id: 6, name: 'Storm', w9: 0, u2: 0, w8c: 0 },
+    { id: 7, name: 'Emma', w9: 0, u2: 0, w8c: 0 },
   ]);
 
   const [isFetching, setIsFetching] = useState(false);
