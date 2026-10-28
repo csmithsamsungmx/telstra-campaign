@@ -2,7 +2,7 @@ import React, { useState, useMemo, useEffect } from 'react';
 import Papa from 'papaparse';
 
 export default function IncentiveDashboard() {
-const [consultants, setConsultants] = useState([
+  const [consultants, setConsultants] = useState([
   ]);
 
   const [isFetching, setIsFetching] = useState(false);
@@ -81,9 +81,9 @@ const [consultants, setConsultants] = useState([
 
   return (
     <div className="min-h-screen bg-slate-50 font-sans text-slate-900 pb-12">
-      <div className="bg-gradient-to-br from-[#0066FF] to-[#1428A0] text-white shadow-xl">
+      <div className="bg-gradient-to-br from-[#FF7700] to-[#D95C00] text-white shadow-xl">
         <div className="max-w-5xl mx-auto px-6 py-16 text-center">
-          <div className="flex justify-center items-center space-x-4 mb-6 text-sm md:text-base font-semibold tracking-widest text-blue-200">
+          <div className="flex justify-center items-center space-x-4 mb-6 text-sm md:text-base font-semibold tracking-widest text-orange-200">
             <span>TELSTRA BELMONT</span>
             <span>✕</span>
             <span>SAMSUNG</span>
@@ -93,16 +93,16 @@ const [consultants, setConsultants] = useState([
             Time To Delivery, Belmont!
           </h1>
           
-          <p className="text-xl md:text-2xl font-light text-blue-100 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl md:text-2xl font-light text-orange-100 mb-8 max-w-2xl mx-auto">
             The November Galaxy Watch Challenge
           </p>
 
           <div className="inline-block bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 shadow-lg mb-8 max-w-3xl">
             <h2 className="text-2xl font-bold mb-2 text-yellow-400">THE GOAL: TEAM LUNCH ON SAMSUNG</h2>
-            <p className="text-lg text-blue-50 font-medium">
+            <p className="text-lg text-orange-50 font-medium">
               18 Units across the store unlocks the team lunch. Let's work together to hit the target! <br className="hidden md:block" />
             </p>
-            <p className="text-sm text-blue-200 mt-4 italic">
+            <p className="text-sm text-orange-200 mt-4 italic">
               "More confidence. More conversations. More Galaxy Watches."
             </p>
           </div>
@@ -112,10 +112,10 @@ const [consultants, setConsultants] = useState([
               <span className="font-bold text-lg">Store Minimum Target</span>
               <span className="font-bold text-2xl">{totalStoreSales} / {targetUnits} Units</span>
             </div>
-            <div className="h-6 w-full bg-blue-950/50 rounded-full overflow-hidden border border-white/20 relative">
+            <div className="h-6 w-full bg-orange-950/50 rounded-full overflow-hidden border border-white/20 relative">
               <div 
                 className={`h-full transition-all duration-700 ease-out flex items-center justify-end px-2
-                  ${isUnlocked ? 'bg-gradient-to-r from-emerald-400 to-green-500' : 'bg-gradient-to-r from-blue-400 to-cyan-400'}`}
+                  ${isUnlocked ? 'bg-gradient-to-r from-emerald-400 to-green-500' : 'bg-gradient-to-r from-orange-400 to-yellow-400'}`}
                 style={{ width: `${progressPercentage}%` }}
               >
               </div>
@@ -134,7 +134,7 @@ const [consultants, setConsultants] = useState([
         <div className="bg-white rounded-xl shadow-md p-6 mb-8 border border-slate-200 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
            <div className="font-semibold text-slate-700">Eligible Devices:</div>
            <div className="flex flex-wrap gap-3">
-              <span className="px-4 py-2 bg-blue-50 text-[#1428A0] rounded-lg text-sm font-bold border border-blue-100">Galaxy Watch 9 LTE</span>
+              <span className="px-4 py-2 bg-orange-50 text-[#D95C00] rounded-lg text-sm font-bold border border-orange-200">Galaxy Watch 9 LTE</span>
               <span className="px-4 py-2 bg-slate-800 text-white rounded-lg text-sm font-bold border border-slate-700">Watch Ultra 2</span>
               <span className="px-4 py-2 bg-slate-100 text-slate-700 rounded-lg text-sm font-bold border border-slate-300">Watch 8 Classic LTE</span>
            </div>
@@ -151,7 +151,7 @@ const [consultants, setConsultants] = useState([
               <div 
                 key={consultant.id} 
                 className={`bg-white rounded-xl shadow-sm border transition-all duration-300 flex flex-col md:flex-row overflow-hidden
-                  ${isFirst ? 'border-yellow-400 ring-2 ring-yellow-400/20 shadow-yellow-100' : 'border-slate-200 hover:border-blue-300'}`}
+                  ${isFirst ? 'border-yellow-400 ring-2 ring-yellow-400/20 shadow-yellow-100' : 'border-slate-200 hover:border-orange-400'}`}
               >
                 <div className={`p-6 md:w-1/3 flex items-center space-x-4 
                   ${isFirst ? 'bg-yellow-50/50' : isSecond ? 'bg-slate-50/50' : isThird ? 'bg-orange-50/50' : 'bg-transparent'}`}>
@@ -170,8 +170,8 @@ const [consultants, setConsultants] = useState([
                 </div>
 
                 <div className="p-6 md:w-2/3 grid grid-cols-1 md:grid-cols-3 gap-4 border-t md:border-t-0 md:border-l border-slate-100 bg-white">
-                  <div className="flex items-center justify-between bg-blue-50/50 p-3 rounded-lg border border-blue-100/50">
-                    <span className="text-sm font-semibold text-[#1428A0]">Watch 9 LTE</span>
+                  <div className="flex items-center justify-between bg-orange-50/50 p-3 rounded-lg border border-orange-100/50">
+                    <span className="text-sm font-semibold text-[#D95C00]">Watch 9 LTE</span>
                     <div className="flex items-center justify-center bg-white rounded-md shadow-sm border border-slate-200 w-12 py-1">
                       <span className="font-bold text-slate-700">{consultant.w9}</span>
                     </div>
