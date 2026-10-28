@@ -117,4 +117,4 @@ export default function IncentiveDashboard() {
             </p>
           </div>
           
-          <div className="max-w-xl mx-auto mt-4
+          <div className="max-w-xl mx-auto mt-4">
