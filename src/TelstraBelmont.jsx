@@ -67,7 +67,7 @@ const [consultants, setConsultants] = useState([
     return consultants.reduce((acc, curr) => acc + curr.w9 + curr.u2 + curr.w8c, 0);
   }, [consultants]);
 
-  const targetUnits = 4;
+  const targetUnits = 18;
   const isUnlocked = totalStoreSales >= targetUnits;
   const progressPercentage = Math.min((totalStoreSales / targetUnits) * 100, 100);
 
