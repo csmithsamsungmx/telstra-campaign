@@ -90,7 +90,7 @@ export default function IncentiveDashboard() {
           </div>
           
           <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-4 drop-shadow-md uppercase italic">
-            Time To Delivery, Belmont!
+            Time To Deliver, Belmont!
           </h1>
           
           <p className="text-xl md:text-2xl font-light text-orange-100 mb-8 max-w-2xl mx-auto">
